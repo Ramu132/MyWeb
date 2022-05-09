@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/807ff7c6f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #edf2f4;
+            /* background-color: rgb(255, 255, 255); */
+        }
+        .content{
+            background-color: rgb(255, 231, 231);
+            padding-bottom: 4rem;
+        }
+        nav{
+            top: 0px;
+            position:sticky;
+        }
+.navbar{
+/* border: 2px solid rgb(47, 212, 135); */
+font-size: 1.19rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+display: flex;
+justify-content: center;
+/* background-color: rgb(207, 250, 253); */
+background-color: #A8DADC !important;
+min-width: 100%;
+box-shadow: 3px 3px 13px  #355070;
+transition: .6s;
+
+/* width: 100vw; */
+/* position: absolute; */
+/* background-color: rgb(190, 190, 190); */
+}
+.navbar a{
+    text-decoration: none;
+    margin: 1.1rem;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+    font-weight: lighter;
+    /* border: 2px solid yellow; */
+}
+.navbar a:hover{
+ animation: navbar;
+ animation-duration: .6s;
+ animation-fill-mode: forwards;
+ animation-iteration-count: 1;
+ cursor: pointer;
+}
+@keyframes navbar{
+ 0%{
+    /* background-color: rgb(0, 0, 0); */
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+    
+ } 
+ 100%{
+     background-color: rgb(175, 68, 68);
+     color: rgb(255, 255, 255);
+     /* box-shadow: 2px 2px 10px rgb(255, 87, 87); */
+     /* font-size: 2rem; */
+     text-shadow: 2px 2px 8px  rgb(22, 21, 20);
+ }
+}
+.img{
+    /* border: 2px solid yellowgreen; */
+    height:30rem;
+    max-width:100%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(1645938787787.jpg);
+    margin-bottom: 5rem;
+    transition: .6s;
+}
+.content{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid rgb(221, 221, 221);
+    height: fit-content;
+    padding-top: 4.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:95%;
+    /* border-radius: 15px; */
+    border: 1px solid rgb(207, 207, 207);
+    background-color: #ccdef3;
+    box-shadow: 1px 1px 8px #9496b1;
+    transition: .6s;
+}
+.c{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    word-spacing: 3.1px;
+    /* background-color: rgb(161, 31, 31); */
+    background-color: #355070;
+    color: white;
+    /* border: 1px solid rgb(185, 42, 78); */
+    border: 2px solid #355070;
+    width: 18rem;
+    height: fit-content;
+    /* height: 19.3rem; */
+    padding: 1.3rem 3rem 1.3rem 3rem;
+    margin-right: 2px;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    border-radius :3px;
+    box-shadow: 1px 1px 5px grey;
+    transition: .6s;
+}
+
+.c:hover{
+    cursor: pointer;
+    animation: cardhover;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-play-state:running;
+    /* animation-delay: .1s; */
+}
+@keyframes cardhover{
+
+    0%{
+        box-shadow: 1px 1px 5px grey;
+        /* background-color: rgb(161, 31, 31); */
+        background-color: #355070;
+        color: white;
+    }
+    100%{
+        box-shadow: -1px -1px 15px grey;
+        /* background-color: rgb(221, 194, 194); */
+        background-color: #7790af;
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+
+/* Responsiveness Management */
+
+/* Tab */
+@media screen and (max-width:898px) {
+   
+    .c{
+        line-height: 1rem;
+        font-size: .6rem;
+         padding: 1rem 1.5rem 1rem 1.5rem;
+        width: 12rem;
+
+    }
+}
+/* mobile */
+@media screen and (max-width:750px) {
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: column;
+       margin: auto;
+        width:99%;
+        height:fit-content;
+       
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        /* position: fixed; */
+        /* position: fixed; */
+    }
+    .navbar a{
+        margin: .1rem;
+        font-size: 1rem;
+        font-weight: 250;
+        text-align: center;
+    }
+    .img{
+        height: 37vh;
+    }
+    .about-me {
+        font-size: 10px;
+        width: fit-content;
+       padding:0;
+    }
+    .about-me p{
+        padding: 0rem 1rem !important;
+    }
+    @media screen and (max-width:718px)
+    {
+        .intro{
+            max-height :30vh; ;
+        }
+        .black{
+            max-height: 30vh;
+        }
+        .pic img{
+            max-height: 30vh;
+        }
+    }
+    
+}
+.about-me{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    /* background-color: #2b2d42; */
+    /* background-color: #9496b1; */
+    background-color: #af7777;
+    /* color: rgb(204, 204, 204); */
+    /* color: rgb(255, 218, 218); */
+    
+    /* background-color: aliceblue; */
+    text-align: center;
+    width:70%;
+    margin: auto;
+    margin-top: 5rem;
+    border: 0;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    box-shadow: 2px 2px 10px gray ;
+    /* margin-bottom: 2rem; */
+    /* border: 1px solid black; */
+    /* border-radius: 2rem; */
+}
+.about-me h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.7vw;
+    font-weight: 100;
+    /* margin-bottom: 10px; */
+}
+.about-me p{
+    line-height: 1.5rem;
+    word-spacing: 6px;
+    padding: 0rem 5rem;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.intro{
+    /* border: 2px solid #565b8f; */
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin: auto;
+    margin-top: .9vw;
+    height: 50vh;
+    /* box-shadow: 2px 2px 13px #424464; */
+    /* justify-content:space-between; */
+}
+.black{
+    /* border: 2px solid yellowgreen; */
+    width:34vw; 
+    border-bottom-left-radius: 6px;
+   height: 50vh;
+   background-color: #212529;
+   position: static;
+   transition: .6s;
+   box-shadow: -2px -2px 10px gray ;
+}
+.black p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+   font-weight: lighter;
+   font-size:1.7vw ;
+   text-align: center;
+   /* line-height: 27px; */
+   position: relative;
+   top: 50%;
+   text-transform: lowercase;
+   line-height: 2.9vw;
+}
+.pic img{
+    width:35.99vw;
+    height: 50vh;
+    filter: opacity(1) ;
+    position:relative;
+    z-index: -1; 
+   transition: .6s;
+   box-shadow: 2px 2px 10px gray ;
+   border-bottom-right-radius: 6px;
+}
+ .pictures{
+     margin-top: 200px;
+ }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
+            <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-school"></i> Study</a>
+            <a href="pass.html"><i class="fa-solid fa-images"></i> Gallery</a>
+            <a href="#"><i class="fa-solid fa-question"></i> About</a>
+            <!-- should add icons for mobile only -->
+        </div>
+    </nav>
+    <!-- image section -->
+     <div class="img">
+     </div>
+
+     <!-- content Section -->
+     <div class="content">
+        <p class="c">
+            Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non veritatis sint laboriosam quod vero voluptatum ducimus, distinctio obcaecati sequi, reprehenderit eos minus illum aperiam asperiores? Vel praesentium et culpa labore voluptas officia asperiores voluptate. Voluptatibus esse magnam voluptate magni. sit amet consectetur adipisicing elit. Dignissimos ab corporis soluta modi fuga eum esse eius delectus officiis pariatur.
+        </p>
+        <p class="c">
+            Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non veritatis sint laboriosam quod vero voluptatum ducimus, distinctio obcaecati sequi, reprehenderit eos minus illum aperiam asperiores? Vel praesentium et culpa labore voluptas officia asperiores voluptate. Voluptatibus esse magnam voluptate magni. sit amet consectetur adipisicing elit. Dignissimos ab corporis soluta modi fuga eum esse eius delectus officiis pariatur.
+        </p>
+        <p class="c" id="last-c">
+            Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non veritatis sint laboriosam quod vero voluptatum ducimus, distinctio obcaecati sequi, reprehenderit eos minus illum aperiam asperiores? Vel praesentium et culpa labore voluptas officia asperiores voluptate. Voluptatibus esse magnam voluptate magni. sit amet consectetur adipisicing elit. Dignissimos ab corporis soluta modi fuga eum esse eius delectus officiis pariatur.
+        </p>
+     </div>
+
+     <!-- About me section -->
+     <div class="about-me">
+        <h2>Hey There!</h2>
+        <p >Lets cut all the craps and Allow me to introduce myself.
+            Im Tanvir Sharier simply working on this websiteIm a student in college.
+            My hobby is Web Developing, Programming and Cyber Security
+        </p>
+        <!-- <p>Im Tanvir Sharier simply working on this websiteIm a student in college.</p>
+        <p>My hobby is Web Developing, Programming and Cyber Security</p> -->
+       
+    </div>
+        <div class="intro">
+            <div class="black">
+               <p>"slow progress is still progress"</p>
+                <p>"only Dead fishes go with the flows"</p>
+            </div>
+            <div class="pic">
+                <img src="SAVE_20210730_195544.jpg" alt="">
+            </div>
+        </div>
+     <!-- Pictures sections -->
+     <div class="pictures">
+        <!-- Will be ading pictres -->
+     </div>
+</body>
+</html>
