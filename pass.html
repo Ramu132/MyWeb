@@ -10,20 +10,31 @@
 <style>
     body{
         background-color: #b7dcff;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
+        /* border: 2px solid yellowgreen; */
+        /* display: flex;
+        flex-direction: column; */
        transition: .5s;
     }
-    
+    .main{
+        margin: auto;
+        border: 2px solid #378f4d;
+        max-width: 100%;
+        width: 97.5vw;
+        min-height: 95vh;
+        display: flex;
+        align-items: center;
+    }
     form{
-        width: 32rem;
+        max-width: 100%;
+        width: 27rem;
         height:25rem;
+        /* position:relative;
+        top: 5rem; */
         /* background-color: #393d3f; */
         /* background-color: #2a2c2a; */
         background-color: #2a2d43;
-       margin: auto;
+       margin: auto auto;
+       /* margin-top: 10%; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,14 +108,14 @@
    }
 </style>
 <body>
-<!-- <div class="main"> -->
-    <form name="login">
+<div class="main">
+    <form name="login" class="login">
            <input class="inp"  name="id" size="6" type="text" placeholder="Username">
          <input class="inp" name="pass" type="password" size="6" placeholder="Password">
          <input id="btn" type="button" value="Enter" onclick="gnome(this.form)">
         <a href="www.google.com">Forgeot password?</a>
         </form>
-<!-- </div> -->
+</div>
 
 </body>
 </html>
