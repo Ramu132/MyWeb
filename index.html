@@ -31,7 +31,9 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 display: flex;
 justify-content: center;
 /* background-color: rgb(207, 250, 253); */
-background-color: #A8DADC !important;
+/* background-color: #A8DADC !important; */
+/* background-color: #ffb703; */
+background-color: #3d405b;
 min-width: 100%;
 box-shadow: 3px 3px 13px  #355070;
 transition: .6s;
@@ -44,10 +46,11 @@ transition: .6s;
     text-decoration: none;
     margin: 1.1rem;
     padding: 12px;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
+    color: white;
     border-radius: 10px;
     
-    font-weight: lighter;
+    /* font-weight: lighter; */
     /* border: 2px solid yellow; */
 }
 .navbar a:hover{
@@ -95,7 +98,9 @@ transition: .6s;
     width:95%;
     /* border-radius: 15px; */
     border: 1px solid rgb(207, 207, 207);
-    background-color: #ccdef3;
+    /* background-color: #ccdef3; */
+    background-color: #f4f1de;
+    /* background-color: rgb(221, 212, 212); */
     box-shadow: 1px 1px 8px #9496b1;
     transition: .6s;
 }
@@ -104,10 +109,11 @@ transition: .6s;
     font-size: 1rem;
     word-spacing: 3.1px;
     /* background-color: rgb(161, 31, 31); */
-    background-color: #355070;
+    /* background-color: #355070; */
+    background-color: #81b29a;
     color: white;
     /* border: 1px solid rgb(185, 42, 78); */
-    border: 2px solid #355070;
+    border: 3px solid #81b29a;
     width: 18rem;
     height: fit-content;
     /* height: 19.3rem; */
@@ -132,15 +138,15 @@ transition: .6s;
 @keyframes cardhover{
 
     0%{
-        box-shadow: 1px 1px 5px grey;
+        box-shadow: 1px 1px 5px #81b29a;
         /* background-color: rgb(161, 31, 31); */
-        background-color: #355070;
+        background-color: #81b29a;
         color: white;
     }
     100%{
-        box-shadow: -1px -1px 15px grey;
+        box-shadow: -1px -1px 15px #81b29a;
         /* background-color: rgb(221, 194, 194); */
-        background-color: #7790af;
+        background-color: #c0e5dd;
         color: rgb(0, 0, 0);
     }
 
@@ -190,61 +196,45 @@ transition: .6s;
     }
     .about-me p{
         padding: 0rem 1rem !important;
+        line-height: 18px !important;
     }
-   
-        .intro{
-            max-height :fit-content; ;
-        }
-        .black{
-            max-height: 45vh;
+
+    .black{
+            max-height: 32vh;
         }
         .pic img{
-            max-height: 45vh ;
+            max-height: 32vh;
         }
-    
-    
 }
 
-@media screen and (max-width:576px)
+@media screen and (max-width:492px)
     {
         .intro{
             max-height :fit-content; ;
         }
         .black{
-            max-height: 38vh;
+            max-height: 20vh;
         }
         .pic img{
-            max-height: 38vh ;
+            max-height: 20vh;
+        }
+        .about-me p{
+
         }
     }
-
-
-@media screen and (max-width:491px)
-    {
-        .intro{
-            max-height :fit-content; ;
-        }
-        .black{
-            max-height: 26vh;
-        }
-        .pic img{
-            max-height: 26vh ;
-        }
-    }
-
 .about-me{
     padding-top: 1rem;
     padding-bottom: .5rem;
     /* background-color: #2b2d42; */
     /* background-color: #9496b1; */
     /* background-color: #af7777; */
-    background-color: rgb(181, 199, 144);
+    background-color: #cae9ff;
     /* color: rgb(204, 204, 204); */
     /* color: rgb(255, 218, 218); */
     
     /* background-color: aliceblue; */
     text-align: center;
-    width:94.5%;
+    width:70%;
     margin: auto;
     margin-top: 5rem;
     border: 0;
@@ -272,22 +262,18 @@ transition: .6s;
     /* border: 2px solid #565b8f; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* max-width: 70%; */
-    max-width: 100%;
+    max-width: 70%;
     margin: auto;
     margin-top: .9vw;
-    max-height: fit-content;
+    height: 50vh;
     /* box-shadow: 2px 2px 13px #424464; */
     /* justify-content:space-between; */
 }
 .black{
     /* border: 2px solid yellowgreen; */
-    max-width: 100%;
-    width:46.3vw; 
+    width:34vw; 
     border-bottom-left-radius: 6px;
-    min-height: 100%;
-   height: 55vh;
+   height: 50vh;
    background-color: #212529;
    position: static;
    transition: .6s;
@@ -306,11 +292,9 @@ transition: .6s;
    line-height: 2.9vw;
 }
 .pic img{
-    max-width: 100%;
-    width: 46.3vw;
-    /* width:35.99vw; */
-    height: 55vh;
-    filter: opacity(.9) grayscale(1);
+    width:35.99vw;
+    height: 50vh;
+    filter: opacity(1) ;
     position:relative;
     z-index: -1; 
    transition: .6s;
@@ -319,6 +303,9 @@ transition: .6s;
 }
  .pictures{
      margin-top: 200px;
+ }
+ i{
+     padding-right: 14px;
  }
     </style>
 </head>
@@ -366,7 +353,7 @@ transition: .6s;
                 <p>"only Dead fishes go with the flows"</p>
             </div>
             <div class="pic">
-                <img src="IMG_20210731_225013.jpg" alt="">
+                <img src="SAVE_20210730_195544.jpg" alt="">
             </div>
         </div>
      <!-- Pictures sections -->
