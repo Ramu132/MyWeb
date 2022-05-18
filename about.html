@@ -5,19 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/807ff7c6f0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/807ff7c6f0.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    button{
+        display: none;
+    }
+    nav{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5rem;
+        transition: .6s;
+    }
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 10px;
+    margin: 0px 12px;
+}
+
+@media screen and (max-width:750px) 
+{
+  
+    nav{
+        width: 19rem;
+        min-height: 100vh;
+        flex-direction: column;
+       justify-content: flex-start;
+       transition: .6s;
+       position: absolute;
+       left: -19rem;
+    }
+    .navbar a{
+        margin-bottom: 29px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        min-width:100% ;
+    }
+    button{
+        display: block;
+    }
+    .btn2{
+       border: none;
+        padding: 1px 6px;
+        background-color: transparent;
+        color: white;
+        /* background-color: aqua; */
+    }
+    .btn2:hover{
+        cursor: pointer;
+    }
+    .btn1{
+        border: none;
+        padding: 1px 6px;
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        /* background-color: aqua; */
+        z-index: -1;
+        background-color: transparent;
+        /* color: black; */
+    }
+    .btn1:hover{
+        cursor: pointer;
+    }
+    .top{
+        margin-top: 9px;
+        margin-bottom: 50px;
+        margin-left: 8px;
+    }
+}
+</style>
+
+
 <body>
-    <nav>
+    <button type="button" onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i></button>
+    <nav id="nav">
+      
         <div class="navbar">
-            <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
-            <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-school"></i> Study</a>
-            <a href="pass.html"><i class="fa-solid fa-images"></i> Gallery</a>
-            <a href="#"><i class="fa-solid fa-question"></i> About</a>
+            <div class="top">
+                <button type="button" class="btn2" onclick="hide()"><i class="fa-2x fa-solid fa-bars"></i></button>
+            </div>
+          
+            <a href="index.html"> </i> Home</a>
+            <a href="https://ramu132.github.io/FormulaHub/"> Study</a>
+            <a href="pass.html">Gallery</a>
+            <a href="#"> About</a>
+            
             <!-- should add icons for mobile only -->
         </div>
     </nav>
+
+
+    <script>
+        function show()
+        {
+            let x=document.getElementById("nav");
+            x.style.left="0rem";
+        }
+
+        function hide()
+        {
+            let y=document.getElementById("nav");
+            y.style.left="-19rem";
+        }
+    </script>
+
 </body>
 </html>
