@@ -33,7 +33,8 @@ justify-content: center;
 /* background-color: rgb(207, 250, 253); */
 /* background-color: #A8DADC !important; */
 /* background-color: #ffb703; */
-background-color: #3d405b;
+/* background-color: #3d405b; */
+background-color: #81b29a;
 min-width: 100%;
 box-shadow: 3px 3px 13px  #355070;
 transition: .6s;
@@ -49,7 +50,7 @@ transition: .6s;
     /* color: rgb(0, 0, 0); */
     color: white;
     border-radius: 10px;
-
+    
     /* font-weight: lighter; */
     /* border: 2px solid yellow; */
 }
@@ -60,28 +61,29 @@ transition: .6s;
  animation-iteration-count: 1;
  cursor: pointer;
 }
-@keyframes navbar{
+ @keyframes navbar{
  0%{
-    /* background-color: rgb(0, 0, 0); */
+    
+    background-color: #81b29a;
     box-shadow: 0px 0px 1px rgb(0, 0, 0);
-
- }
+    
+ } 
  100%{
      background-color: rgb(175, 68, 68);
      color: rgb(255, 255, 255);
-     /* box-shadow: 2px 2px 10px rgb(255, 87, 87); */
-     /* font-size: 2rem; */
+    box-shadow: 2px 2px 10px rgb(175, 68, 68);
      text-shadow: 2px 2px 8px  rgb(22, 21, 20);
  }
-}
+} 
+
 .img{
     /* border: 2px solid yellowgreen; */
     height:30rem;
-    max-width:100%;
+    max-width:100%; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(1645938787787.jpg);
+    background-image: url(SAVE_20210728_215118.jpg);
     margin-bottom: 5rem;
     transition: .6s;
 }
@@ -95,11 +97,12 @@ transition: .6s;
     height: fit-content;
     padding-top: 4.5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width:95%;
+    width:88%;
     /* border-radius: 15px; */
     border: 1px solid rgb(207, 207, 207);
     /* background-color: #ccdef3; */
-    background-color: #f4f1de;
+    /* background-color: #f4f1de; */
+    background-color: aliceblue;
     /* background-color: rgb(221, 212, 212); */
     box-shadow: 1px 1px 8px #9496b1;
     transition: .6s;
@@ -111,14 +114,14 @@ transition: .6s;
     /* background-color: rgb(161, 31, 31); */
     /* background-color: #355070; */
     background-color: #81b29a;
-    color: white;
+    color: rgb(255, 255, 255);
     /* border: 1px solid rgb(185, 42, 78); */
-    border: 3px solid #81b29a;
+    border: 2px solid #81b29a;
     width: 18rem;
     height: fit-content;
     /* height: 19.3rem; */
     padding: 1.3rem 3rem 1.3rem 3rem;
-    margin-right: 2px;
+    margin-right: 4px;
     margin-top: 30px;
     margin-bottom: 1rem;
     border-radius :3px;
@@ -135,53 +138,62 @@ transition: .6s;
     animation-play-state:running;
     /* animation-delay: .1s; */
 }
-@keyframes cardhover{
+
+/* Card hover animation */
+
+ @keyframes cardhover{
 
     0%{
         box-shadow: 1px 1px 5px #81b29a;
-        /* background-color: rgb(161, 31, 31); */
+       
         background-color: #81b29a;
         color: white;
     }
     100%{
         box-shadow: -1px -1px 15px #81b29a;
-        /* background-color: rgb(221, 194, 194); */
+        
         background-color: #c0e5dd;
         color: rgb(0, 0, 0);
     }
 
-}
+} 
 
 
 /* Responsiveness Management */
 
 /* Tab */
 @media screen and (max-width:898px) {
-
+   
     .c{
-        line-height: 1rem;
-        font-size: .6rem;
-         padding: 1rem 1.5rem 1rem 1.5rem;
-        width: 12rem;
-
+        line-height: 1.3rem;
+        font-size: .7rem;
+         padding: 1rem 1.7rem 1rem 1.7rem;
+        width: 15rem;
+        margin: 20px 15px;
+    }
+    .black{
+        max-height: 37vh;
+    }
+    .pic img{
+        max-height: 37vh;
     }
 }
 /* mobile */
 @media screen and (max-width:750px) {
     .navbar{
-        flex-wrap: wrap;
-        flex-direction: column;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
        margin: auto;
         width:99%;
         height:fit-content;
-
+       
         padding-top: .5rem;
         padding-bottom: .5rem;
         /* position: fixed; */
         /* position: fixed; */
     }
     .navbar a{
-        margin: .1rem;
+        margin: .7rem;
         font-size: 1rem;
         font-weight: 250;
         text-align: center;
@@ -207,11 +219,98 @@ transition: .6s;
         }
 }
 
+.about-me{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    /* background-color: #cae9ff; */
+    background-color: #81b29a;
+    text-align: center;
+    width:70%;
+    margin: auto;
+    margin-top: 5rem;
+    border: 0;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    box-shadow: 2px 2px 10px gray ;
+   
+}
+.about-me h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.7vw;
+    font-weight: 100;
+    
+    /* margin-bottom: 10px; */
+}
+.about-me p{
+    
+    line-height: 1.5rem;
+    word-spacing: 6px;
+    padding: 0rem 5rem;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.intro{
+    /* border: 2px solid #565b8f; */
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin: auto;
+    margin-top: .9vw;
+    height: 50vh;
+    /* box-shadow: 2px 2px 13px #424464; */
+    /* justify-content:space-between; */
+}
+.black{
+    /* border: 2px solid yellowgreen; */
+    width:34vw; 
+    border-bottom-left-radius: 6px;
+   height: 50vh;
+   background-color: #212529;
+   position: static;
+   transition: .6s;
+   box-shadow: -2px -2px 10px gray ;
+}
+.black p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+   font-weight: lighter;
+   font-size:1.7vw ;
+   text-align: center;
+   /* line-height: 27px; */
+   position: relative;
+   top: 50%;
+   text-transform: lowercase;
+   line-height: 2.9vw;
+}
+.pic img{
+    width:35.99vw;
+    height: 50vh;
+    filter: opacity(1) ;
+    position:relative;
+    z-index: -1; 
+   transition: .6s;
+   box-shadow: 2px 2px 10px gray ;
+   border-bottom-right-radius: 6px;
+}
+ .pictures{
+     margin-top: 200px;
+ }
+ i{
+     padding-right: 10px;
+ }
 
-@media screen and (max-width:492px)
+
+
+ @media screen and (max-width:619px)
     {
-       
-        /* making hamburger */
+        .pic img{
+            max-height: 25vh;
+        }
+        .black{
+            max-height: 25vh;
+        }
+
+
         .navbar a{
             width: fit-content;
         }
@@ -256,6 +355,14 @@ transition: .6s;
            cursor: pointer;
        }
 
+    }
+
+ @media screen and (max-width:492px)
+    {
+       
+        /* making hamburger */
+      
+
           /* making hamburger */
         .intro{
             max-height :fit-content; ;
@@ -275,102 +382,22 @@ transition: .6s;
 button{
     display: none;
 }
-.about-me{
-    padding-top: 1rem;
-    padding-bottom: .5rem;
-    /* background-color: #2b2d42; */
-    /* background-color: #9496b1; */
-    /* background-color: #af7777; */
-    background-color: #cae9ff;
-    /* color: rgb(204, 204, 204); */
-    /* color: rgb(255, 218, 218); */
 
-    /* background-color: aliceblue; */
-    text-align: center;
-    width:70%;
-    margin: auto;
-    margin-top: 5rem;
-    border: 0;
-    border-top-left-radius:5px ;
-    border-top-right-radius:5px ;
-    box-shadow: 2px 2px 10px gray ;
-    /* margin-bottom: 2rem; */
-    /* border: 1px solid black; */
-    /* border-radius: 2rem; */
-}
-.about-me h2{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2.7vw;
-    font-weight: 100;
-    /* margin-bottom: 10px; */
-}
-.about-me p{
-    line-height: 1.5rem;
-    word-spacing: 6px;
-    padding: 0rem 5rem;
-    font-weight: lighter;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.intro{
-    /* border: 2px solid #565b8f; */
-    display: flex;
-    flex-direction: row;
-    max-width: 70%;
-    margin: auto;
-    margin-top: .9vw;
-    height: 50vh;
-    /* box-shadow: 2px 2px 13px #424464; */
-    /* justify-content:space-between; */
-}
-.black{
-    /* border: 2px solid yellowgreen; */
-    width:34vw;
-    border-bottom-left-radius: 6px;
-   height: 50vh;
-   background-color: #212529;
-   position: static;
-   transition: .6s;
-   box-shadow: -2px -2px 10px gray ;
-}
-.black p{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-   font-weight: lighter;
-   font-size:1.7vw ;
-   text-align: center;
-   /* line-height: 27px; */
-   position: relative;
-   top: 50%;
-   text-transform: lowercase;
-   line-height: 2.9vw;
-}
-.pic img{
-    width:35.99vw;
-    height: 50vh;
-    filter: opacity(1) ;
-    position:relative;
-    z-index: -1;
-   transition: .6s;
-   box-shadow: 2px 2px 10px gray ;
-   border-bottom-right-radius: 6px;
-}
- .pictures{
-     margin-top: 200px;
- }
- i{
-     padding-right: 14px;
- }
+
+
+
+
     </style>
 </head>
 <body>
     <button type="button" onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
-    <nav>
+    <nav >
         <div class="navbar" id="nav">
             <div class="top">
                 <button type="button" onclick="hide()" class="btn2"><i class="fa-2x fa-solid fa-bars"></i> hide</button>
             </div>
             <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
-            <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-school"></i> Study</a>
+            <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-book"></i> Study</a>
             <a href="pass.html"><i class="fa-solid fa-images"></i> Gallery</a>
             <a href="#"><i class="fa-solid fa-question"></i> About</a>
             <!-- should add icons for mobile only -->
@@ -388,21 +415,18 @@ button{
         <p class="c">
             Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non veritatis sint laboriosam quod vero voluptatum ducimus, distinctio obcaecati sequi, reprehenderit eos minus illum aperiam asperiores? Vel praesentium et culpa labore voluptas officia asperiores voluptate. Voluptatibus esse magnam voluptate magni. sit amet consectetur adipisicing elit. Dignissimos ab corporis soluta modi fuga eum esse eius delectus officiis pariatur.
         </p>
-        <p class="c" id="last-c">
-            Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non veritatis sint laboriosam quod vero voluptatum ducimus, distinctio obcaecati sequi, reprehenderit eos minus illum aperiam asperiores? Vel praesentium et culpa labore voluptas officia asperiores voluptate. Voluptatibus esse magnam voluptate magni. sit amet consectetur adipisicing elit. Dignissimos ab corporis soluta modi fuga eum esse eius delectus officiis pariatur.
-        </p>
+       
      </div>
 
      <!-- About me section -->
      <div class="about-me">
-        <h2>Hey There!</h2>
-        <p >Lets cut all the craps and Allow me to introduce myself.
-            Im Tanvir Sharier simply working on this websiteIm a student in college.
-            My hobby is Web Developing, Programming and Cyber Security
+        <h2>dedicated to all my...</h2>
+        <p >
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cum quisquam? Temporibus qui numquam accusantium quas? Modi.
         </p>
         <!-- <p>Im Tanvir Sharier simply working on this websiteIm a student in college.</p>
         <p>My hobby is Web Developing, Programming and Cyber Security</p> -->
-
+       
     </div>
         <div class="intro">
             <div class="black">
@@ -410,7 +434,7 @@ button{
                 <p>"only Dead fishes go with the flows"</p>
             </div>
             <div class="pic">
-                <img src="IMG_20210731_225013.jpg" alt="">
+                <img src="SAVE_20210728_215118.jpg" alt="">
             </div>
         </div>
      <!-- Pictures sections -->
@@ -418,18 +442,18 @@ button{
         <!-- Will be ading pictres -->
      </div>
 
-
      <script>
-        function show(){
-           let x=document.getElementById("nav");
-           x.style.left="0rem";
+         function show(){
+            let x=document.getElementById("nav");
+            x.style.left="0rem";
+         }
+         function hide()
+        {
+            let y=document.getElementById("nav");
+            y.style.left="-20rem";
         }
-        function hide()
-       {
-           let y=document.getElementById("nav");
-           y.style.left="-20rem";
-       }
-    </script>
+     </script>
+
 
 </body>
 </html>
