@@ -49,7 +49,7 @@ transition: .6s;
     /* color: rgb(0, 0, 0); */
     color: white;
     border-radius: 10px;
-    
+
     /* font-weight: lighter; */
     /* border: 2px solid yellow; */
 }
@@ -64,8 +64,8 @@ transition: .6s;
  0%{
     /* background-color: rgb(0, 0, 0); */
     box-shadow: 0px 0px 1px rgb(0, 0, 0);
-    
- } 
+
+ }
  100%{
      background-color: rgb(175, 68, 68);
      color: rgb(255, 255, 255);
@@ -77,7 +77,7 @@ transition: .6s;
 .img{
     /* border: 2px solid yellowgreen; */
     height:30rem;
-    max-width:100%; 
+    max-width:100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ transition: .6s;
 
 /* Tab */
 @media screen and (max-width:898px) {
-   
+
     .c{
         line-height: 1rem;
         font-size: .6rem;
@@ -174,7 +174,7 @@ transition: .6s;
        margin: auto;
         width:99%;
         height:fit-content;
-       
+
         padding-top: .5rem;
         padding-bottom: .5rem;
         /* position: fixed; */
@@ -207,8 +207,56 @@ transition: .6s;
         }
 }
 
+
 @media screen and (max-width:492px)
     {
+       
+        /* making hamburger */
+        .navbar a{
+            width: fit-content;
+        }
+        .navbar{
+            min-width: 0%;
+            flex-direction: column;
+           max-width: 20rem;
+            justify-content: flex-start;
+          align-items: center;
+            position: absolute;
+            height: 99vh;
+            transition: .6s;
+            left: -20rem;
+        }
+       .btn1{
+           position: absolute;
+           left: 5px;
+           top: 7px;
+           /* top: 1px; */
+           background-color: transparent;
+           
+         
+           /* z-index: 2; */
+       }
+       .btn2{
+           background-color: transparent;
+          color: white;
+       }
+       .top{
+           min-width:100%;
+           margin-bottom: 65px; 
+            position: relative;
+            left: 5px;
+          
+       }
+       button{
+           display: block !important;
+           padding: 5px 15px;
+           border: none;
+       }
+       button:hover{
+           cursor: pointer;
+       }
+
+          /* making hamburger */
         .intro{
             max-height :fit-content; ;
         }
@@ -222,6 +270,11 @@ transition: .6s;
 
         }
     }
+
+
+button{
+    display: none;
+}
 .about-me{
     padding-top: 1rem;
     padding-bottom: .5rem;
@@ -231,7 +284,7 @@ transition: .6s;
     background-color: #cae9ff;
     /* color: rgb(204, 204, 204); */
     /* color: rgb(255, 218, 218); */
-    
+
     /* background-color: aliceblue; */
     text-align: center;
     width:70%;
@@ -271,7 +324,7 @@ transition: .6s;
 }
 .black{
     /* border: 2px solid yellowgreen; */
-    width:34vw; 
+    width:34vw;
     border-bottom-left-radius: 6px;
    height: 50vh;
    background-color: #212529;
@@ -296,7 +349,7 @@ transition: .6s;
     height: 50vh;
     filter: opacity(1) ;
     position:relative;
-    z-index: -1; 
+    z-index: -1;
    transition: .6s;
    box-shadow: 2px 2px 10px gray ;
    border-bottom-right-radius: 6px;
@@ -310,12 +363,16 @@ transition: .6s;
     </style>
 </head>
 <body>
+    <button type="button" onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
     <nav>
-        <div class="navbar">
+        <div class="navbar" id="nav">
+            <div class="top">
+                <button type="button" onclick="hide()" class="btn2"><i class="fa-2x fa-solid fa-bars"></i> hide</button>
+            </div>
             <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
             <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-school"></i> Study</a>
             <a href="pass.html"><i class="fa-solid fa-images"></i> Gallery</a>
-            <a href="about.html"><i class="fa-solid fa-question"></i> About</a>
+            <a href="#"><i class="fa-solid fa-question"></i> About</a>
             <!-- should add icons for mobile only -->
         </div>
     </nav>
@@ -345,7 +402,7 @@ transition: .6s;
         </p>
         <!-- <p>Im Tanvir Sharier simply working on this websiteIm a student in college.</p>
         <p>My hobby is Web Developing, Programming and Cyber Security</p> -->
-       
+
     </div>
         <div class="intro">
             <div class="black">
@@ -360,5 +417,19 @@ transition: .6s;
      <div class="pictures">
         <!-- Will be ading pictres -->
      </div>
+
+
+     <script>
+        function show(){
+           let x=document.getElementById("nav");
+           x.style.left="0rem";
+        }
+        function hide()
+       {
+           let y=document.getElementById("nav");
+           y.style.left="-20rem";
+       }
+    </script>
+
 </body>
 </html>
