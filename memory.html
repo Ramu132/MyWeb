@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,184 +9,195 @@
     <script src="https://kit.fontawesome.com/807ff7c6f0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <style>
-        *{
-           margin: 0px;
-           padding: 0px;
-       }
-       body{
-           /* background-color: rgb(41 23 50); */
-           background-color: #c1d3fe;
-       }
-       .content{
-           background-color: rgb(255, 231, 231);
-           padding-bottom: 4rem;
-       }
-       /* nav{
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* background-color: rgb(41 23 50); */
+            background-color: #c1d3fe;
+        }
+
+        .content {
+            background-color: rgb(255, 231, 231);
+            padding-bottom: 4rem;
+        }
+
+        /* nav{
            top: 0px;
            position: sticky;
 
        } */
-.navbar{
-    font-size: 1.19rem;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-display: flex;
-justify-content: center;
-/* background-color: rgb(207, 250, 253); */
-/* background-color: #A8DADC !important; */
-/* background-color: #ffb703; */
-/* background-color: #3d405b; */
-background-color: #81b29a;
-min-width: 100%;
-box-shadow: 3px 3px 13px  #355070;
-transition: .6s;
-}
-.navbar a{
-   text-decoration: none;
-   margin: 1.1rem;
-   padding: 12px;
-   color: white !important;
-   border-radius: 10px;
-   /* border: 2px solid yellow; */
-}
-.navbar a:hover{
-animation: navbar;
-animation-duration: .6s;
-animation-fill-mode: forwards;
-animation-iteration-count: 1;
-cursor: pointer;
-}
-@keyframes navbar{
-    0%{
-    
-    background-color: #81b29a;
-    box-shadow: 0px 0px 1px rgb(0, 0, 0);
-    
- } 
- 100%{
-     background-color: rgb(175, 68, 68);
-     color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 10px rgb(175, 68, 68);
-     text-shadow: 2px 2px 8px  rgb(22, 21, 20);
- }
-}
+        .navbar {
+            font-size: 1.19rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(207, 250, 253); */
+            /* background-color: #A8DADC !important; */
+            /* background-color: #ffb703; */
+            /* background-color: #3d405b; */
+            background-color: #81b29a;
+            min-width: 100%;
+            box-shadow: 3px 3px 13px #355070;
+            transition: .6s;
+        }
 
-/* mobile */
-@media screen and (max-width:750px) {
-  .navbar{
-      /* flex-wrap: wrap;
+        .navbar a {
+            text-decoration: none;
+            margin: 1.1rem;
+            padding: 12px;
+            color: white !important;
+            border-radius: 10px;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar a:hover {
+            animation: navbar;
+            animation-duration: .6s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            cursor: pointer;
+        }
+
+        @keyframes navbar {
+            0% {
+
+                background-color: #81b29a;
+                box-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+            }
+
+            100% {
+                background-color: rgb(175, 68, 68);
+                color: rgb(255, 255, 255);
+                box-shadow: 2px 2px 10px rgb(175, 68, 68);
+                text-shadow: 2px 2px 8px rgb(22, 21, 20);
+            }
+        }
+
+        /* mobile */
+        @media screen and (max-width:750px) {
+            .navbar {
+                /* flex-wrap: wrap;
       flex-direction: column; */
-     margin: auto;
-      width:99%;
-      height:fit-content;
-     transition: .6s;
-      padding-top: .5rem;
-      padding-bottom: .5rem;
-      /* position: sticky; */
+                margin: auto;
+                width: 99%;
+                height: fit-content;
+                transition: .6s;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                /* position: sticky; */
 
-      /* position: fixed; */
-  }
-  .navbar a{
-      margin: .1rem;
-      font-size: 1rem;
-      font-weight: 250;
-      text-align: center;
-      color: rgb(0, 0, 0);
-  }
-  .card img{
-      margin-bottom: 3rem;
-      min-width: 90%;
-      /* min-height: 100%; */
-      margin-right: 10px;
-      margin-left: 10px;
-     transition: .6s;
-  }
-}
+                /* position: fixed; */
+            }
 
-@media screen and (max-width:527px) {
-.card img{
+            .navbar a {
+                margin: .1rem;
+                font-size: 1rem;
+                font-weight: 250;
+                text-align: center;
+                color: rgb(0, 0, 0);
+            }
 
-    min-width: 60vw;
-    min-height: 80%;
-    transition: .6s;
-}
-}
-
-button{
-    display: none;
-}
-
-
-
-
-
-@media screen and (max-width:619px)
-    {
-
-        .navbar a{
-            width: fit-content;
-            margin-bottom: 20px;
+            .card img {
+                margin-bottom: 3rem;
+                min-width: 90%;
+                /* min-height: 100%; */
+                margin-right: 10px;
+                margin-left: 10px;
+                transition: .6s;
+            }
         }
-        .navbar{
-            min-width: 0%;
-            flex-direction: column;
-           max-width: 20rem;
-            justify-content: flex-start;
-          align-items: center;
-            position: absolute;
-            min-height: 900% ;
-            
-            top: 0px;
-            transition: .6s;
-            left: -20rem;
-          
+
+        @media screen and (max-width:527px) {
+            .card img {
+
+                min-width: 60vw;
+                min-height: 80%;
+                transition: .6s;
+            }
         }
-       .btn1{
-           /* position: absolute; */
-           left: 5px;
-           top: 7px;
-           /* top: 1px; */
-           background-color: transparent;
-
-
-           /* z-index: 2; */
-       }
-       .button1{
-           background-color: #81b29a;
-           position: sticky;
-           width: 100vw;
-           height: 50px;
-           top: 0.1px;
-            transition: .6s;
-            box-shadow: 2px 2px 10px #355070;
-       }
-       .btn2{
-           background-color: transparent;
-          color: white;
-       }
-       .top{
-           min-width:100%;
-           margin-bottom: 65px;
-            position: relative;
-            left: 5px;
-
-       }
-       button{
-           display: block !important;
-           padding: 5px 15px;
-           border: none;
-       }
-       button:hover{
-           cursor: pointer;
-       }
-
-    }
 
 
 
 
 
+        @media screen and (max-width:619px) {
 
-/* #thumb{
+            .navbar a {
+                width: fit-content;
+                margin-bottom: 20px;
+            }
+
+            .navbar {
+                min-width: 0%;
+                flex-direction: column;
+                max-width: 20rem;
+                justify-content: flex-start;
+                align-items: center;
+                position: absolute;
+                min-height: 100%;
+
+                top: 0px;
+                transition: .6s;
+                left: -20rem;
+
+            }
+
+            .btn1 {
+                /* position: absolute; */
+                left: 5px;
+                top: 7px;
+                /* top: 1px; */
+                background-color: transparent;
+
+
+                /* z-index: 2; */
+            }
+
+            .button1 {
+                background-color: #81b29a;
+                position: sticky;
+                width: 100vw;
+                height: 50px;
+                top: 0.1px;
+                transition: .6s;
+                box-shadow: 2px 2px 10px #355070;
+            }
+
+            .btn2 {
+                background-color: transparent;
+                color: white;
+            }
+
+            .top {
+                min-width: 100%;
+                margin-bottom: 65px;
+                position: relative;
+                left: 5px;
+
+            }
+
+            button {
+                display: block !important;
+                padding: 5px 15px;
+                border: none;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+        }
+
+
+
+
+
+
+        /* #thumb{
     text-align: center;
     text-transform:uppercase;
     font-weight: lighter;
@@ -194,125 +206,178 @@ button{
     padding: 5px 6px;
     margin-bottom: 20px;
 } */
- .card img{
-    width: 244px;
-    max-width: 100%;
-    /* height: 70vh; */
-    max-height: 100%;
-    /* filter: grayscale(100%); */
-    transition: .6s;
-    box-shadow: 4px 4px 10px gray;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 3rem;
-    /* border: 2px solid yellow; */
-   border-bottom: 1px solid rgb(98, 216, 44);
-}
-.card img:hover{
-    /* filter: grayscale(0%); */
-    transform: scale(1.1);
-}
-.card{
-    /* border: 2px solid yellowgreen; */
-    transition: .6s;
-    display:flex;
-    max-width: fit-content;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 93vw;
-    height: fit-content;
-    /* align-items: center; */
-    justify-content: center;
-    /* margin: auto; */
-    /* background-color: rgb(41 23 50); */
-    background-color: #edf6f9;
-    padding-top: 45px;
-    border-radius: 17px;
-    margin: auto;
-    /* justify-content:space-evenly; */
+        .card img {
+            width: 244px;
+            max-width: 100%;
+            /* height: 70vh; */
+            max-height: 100%;
+            /* filter: grayscale(100%); */
+            transition: .6s;
+            box-shadow: 4px 4px 10px gray;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 3rem;
+            /* border: 2px solid yellow; */
+            border-bottom: 1px solid rgb(98, 216, 44);
+        }
 
-}
+        .card img:hover {
+            /* filter: grayscale(0%); */
+            transform: scale(1.1);
+        }
+
+        .card {
+            /* border: 2px solid yellowgreen; */
+            transition: .6s;
+            display: flex;
+            max-width: fit-content;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 93vw;
+            height: fit-content;
+            /* align-items: center; */
+            justify-content: center;
+            /* margin: auto; */
+            /* background-color: rgb(41 23 50); */
+            background-color: #edf6f9;
+            padding-top: 45px;
+            border-radius: 17px;
+            margin: auto;
+            /* justify-content:space-evenly; */
+
+        }
 
 
-.card1{
+        .card1 {
 
-    /* border: 2px solid #006d77; */
-    background-color: #d0d1ff;
-    padding: 5rem 0rem;
-    box-shadow: -2px 2px 13px #bc88ff;
-    border-top: 1px solid navy;
-    border-right: 1px solid navy;
-}
+            /* border: 2px solid #006d77; */
+            background-color: #d0d1ff;
+            padding: 5rem 0rem;
+            box-shadow: -2px 2px 13px #bc88ff;
+            border-top: 1px solid navy;
+            border-right: 1px solid navy;
+        }
 
-.card2{
-    /* border: 2px solid yellow; */
-    background-color: #a9d6e5;
-    box-shadow: 2px 2px 13px #288096;
-    border-top: 1px solid rgb(40, 119, 106);
-    border-left: 1px solid rgb(40, 119, 106);
-}
-.card3{
-    background-color: #9bb1ff;
-    box-shadow: -2px -2px 13px #6881dd;
-    border-top: 2px solid rgb(64, 116, 211);
-    border-right: 2px solid rgb(64, 116, 211);
-}
-.card4{
-    background-color: #809bce;
+        .card2 {
+            /* border: 2px solid yellow; */
+            background-color: #a9d6e5;
+            box-shadow: 2px 2px 13px #288096;
+            border-top: 1px solid rgb(40, 119, 106);
+            border-left: 1px solid rgb(40, 119, 106);
+        }
 
-    box-shadow: 2px 2px 13px #72a3fd;
-    border-top: 2px solid #4081fa;
-    border-left: 2px solid #4081fa;
-}
-.card5{
-    background-color: #ccd5ae;
+        .card3 {
+            background-color: #9bb1ff;
+            box-shadow: -2px -2px 13px #6881dd;
+            border-top: 2px solid rgb(64, 116, 211);
+            border-right: 2px solid rgb(64, 116, 211);
+        }
 
-    box-shadow: 2px 2px 13px #9fb847;
-    border-top: 1px solid rgb(40, 119, 106);
-    border-right: 1px solid rgb(40, 119, 106);
-}
-.card6{
-    background-color: #aed9e0;
+        .card4 {
+            background-color: #809bce;
 
-    box-shadow: 2px 2px 13px #288096;
-    border-top: 1px solid rgb(40, 119, 106);
-    border-left: 1px solid rgb(40, 119, 106);
-}
-.card7{
-    background-color:rgb(212, 212, 146);
-    box-shadow: 2px 2px 13px #769b3c;
-    border-top: 1px solid rgb(40, 119, 106);
-    border-right: 1px solid rgb(40, 119, 106);
-}
-.container h3{
-    text-align: center;
-    margin: 30px auto ;
-    /* display: flex; */
-    width: 50%;
-    height: 100%;
-    /* background-color: rgb(99, 126, 247); */
-    /* background-color: #e29578; */
-   background-color: #cf995f;
-    font-weight: lighter;
-    color: rgb(0, 0, 0);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px 0px;
-    font-size: 1.3rem;
-    box-shadow: 2px 2px 13px #d3c29e;
-    border-radius: 14px;
-    transition: .6s;
-}
- i{
-     padding-right:14px ;
- }
-   </style>
+            box-shadow: 2px 2px 13px #72a3fd;
+            border-top: 2px solid #4081fa;
+            border-left: 2px solid #4081fa;
+        }
+
+        .card5 {
+            background-color: #ccd5ae;
+
+            box-shadow: 2px 2px 13px #9fb847;
+            border-top: 1px solid rgb(40, 119, 106);
+            border-right: 1px solid rgb(40, 119, 106);
+        }
+
+        .card6 {
+            background-color: #aed9e0;
+
+            box-shadow: 2px 2px 13px #288096;
+            border-top: 1px solid rgb(40, 119, 106);
+            border-left: 1px solid rgb(40, 119, 106);
+        }
+
+        .card7 {
+            background-color: rgb(212, 212, 146);
+            box-shadow: 2px 2px 13px #769b3c;
+            border-top: 1px solid rgb(40, 119, 106);
+            border-right: 1px solid rgb(40, 119, 106);
+        }
+
+        .container h3 {
+            text-align: center;
+            margin: 30px auto;
+            /* display: flex; */
+            width: 50%;
+            height: 100%;
+            /* background-color: rgb(99, 126, 247); */
+            /* background-color: #e29578; */
+            background-color: #cf995f;
+            font-weight: lighter;
+            color: rgb(0, 0, 0);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 0px;
+            font-size: 1.3rem;
+            box-shadow: 2px 2px 13px #d3c29e;
+            border-radius: 14px;
+            transition: .6s;
+        }
+
+        i {
+            padding-right: 14px;
+        }
+
+        .button1 button {
+            display: none;
+        }
+
+        nav button {
+            display: none;
+        }
+
+
+        .switch {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .switch button {
+            border: none;
+            padding: 4px 8px;
+            margin: 10px 50px;
+        }
+       
+        #s2{
+            display: none;
+        }
+        #s3{
+            display: none;
+        }
+        #s4{
+            display: none;
+        }
+        #s5{
+            display: none;
+        }
+        #s6{
+            display: none;
+        }
+
+        #s7{
+            display: none;
+        }
+        
+        </style>
 </head>
+
 <body>
     <div class="button1" id="bt1">
-        <button type="button"  onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
+        <button type="button" onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
     </div>
 
-    <nav >
+    <nav>
         <div class="navbar" id="nav">
             <div class="top">
                 <button type="button" onclick="hide()" class="btn2"><i class="fa-2x fa-solid fa-bars"></i> hide</button>
@@ -324,163 +389,223 @@ button{
             <!-- should add icons for mobile only -->
         </div>
     </nav>
-   <!-- <h3 id="thumb">THE Album of memories</h3> -->
+    <!-- <h3 id="thumb">THE Album of memories</h3> -->
     <div class="container">
         <h3>Kantojir Mondir ⚜</h3>
-        <div class="card card1">
+        <div class="card card1" id="s1">
 
-            <a href="data/kantojir/FB_IMG_1628874003654.jpg"><img src="data/kantojir/FB_IMG_1628874003654.jpg"  alt="loading failed"></a>
-           <a href="data/kantojir/FB_IMG_1628874009373.jpg"> <img src="data/kantojir/FB_IMG_1628874009373.jpg"  alt=""></a>
-            <a href="data/kantojir/FB_IMG_1628874016576.jpg"><img src="data/kantojir/FB_IMG_1628874016576.jpg"  alt=""></a>
-            <a href="data/kantojir/FB_IMG_1628874020013.jpg"><img src="data/kantojir/FB_IMG_1628874020013.jpg"  alt=""></a>
-            <a href="data/kantojir/FB_IMG_1628874020013.jpg"><img src="data/kantojir/FB_IMG_1628874020013.jpg"  alt=""></a>
-
-
-
+            <a href="data/kantojir/FB_IMG_1628874003654.jpg"><img src="data/kantojir/FB_IMG_1628874003654.jpg"
+                    alt="loading failed"></a>
+            <a href="data/kantojir/FB_IMG_1628874009373.jpg"> <img src="data/kantojir/FB_IMG_1628874009373.jpg"
+                    alt=""></a>
+            <a href="data/kantojir/FB_IMG_1628874016576.jpg"><img src="data/kantojir/FB_IMG_1628874016576.jpg"
+                    alt=""></a>
+            <a href="data/kantojir/FB_IMG_1628874020013.jpg"><img src="data/kantojir/FB_IMG_1628874020013.jpg"
+                    alt=""></a>
+            <a href="data/kantojir/FB_IMG_1628874020013.jpg"><img src="data/kantojir/FB_IMG_1628874020013.jpg"
+                    alt=""></a>
+        </div>
+        <div class="switch">
+            <button onclick="fold()" type="button">Fold</button>
+            <button onclick="spread()" type="button">spread</button>
         </div>
 
-   <!-- 2nd card -->
+        <!-- 2nd card -->
 
-   <h3>Dahlia Bridge</h3>
-   <div class="card card2">
+        <h3>Dahlia Bridge</h3>
+        <div class="card card2" id="s2">
 
-       <a href="data/dahlia/IMG-20210920-WA0000.jpg"><img src="data/dahlia/IMG-20210920-WA0000.jpg"  alt="loading failed"></a>
-      <a href="data/dahlia/IMG-20210920-WA0001.jpg"> <img src="data/dahlia/IMG-20210920-WA0001.jpg"  alt=""></a>
-      
-       <a href="data/dahlia/IMG-20210920-WA0022.jpg"><img src="data/dahlia/IMG-20210920-WA0022.jpg"  alt=""></a>
-       
+            <a href="data/dahlia/IMG-20210920-WA0000.jpg"><img src="data/dahlia/IMG-20210920-WA0000.jpg"
+                    alt="loading failed"></a>
+            <a href="data/dahlia/IMG-20210920-WA0001.jpg"> <img src="data/dahlia/IMG-20210920-WA0001.jpg" alt=""></a>
 
-       <a href="data/dahlia/IMG-20210920-WA0026.jpg"><img src="data/dahlia/IMG-20210920-WA0026.jpg" ></a>
+            <a href="data/dahlia/IMG-20210920-WA0022.jpg"><img src="data/dahlia/IMG-20210920-WA0022.jpg" alt=""></a>
 
-       <a href="data/dahlia/IMG-20210920-WA0029.jpg"><img src="data/dahlia/IMG-20210920-WA0029.jpg" ></a>
 
-            <a href="data/dahlia/IMG-20210920-WA0031.jpg"><img src="data/dahlia/IMG-20210920-WA0031.jpg" ></a>
+            <a href="data/dahlia/IMG-20210920-WA0026.jpg"><img src="data/dahlia/IMG-20210920-WA0026.jpg"></a>
 
-            <a href="data/dahlia/IMG-20210920-WA0021.jpg"><img src="data/dahlia/IMG-20210920-WA0021.jpg" ></a>
-            <a href="data/dahlia/IMG-20210920-WA0008.jpg"><img src="data/dahlia/IMG-20210920-WA0008.jpg" ></a>
-            <a href="data/dahlia/IMG-20210920-WA0009.jpg"><img src="data/dahlia/IMG-20210920-WA0009.jpg" ></a>
-            <a href="data/dahlia/IMG-20210920-WA0015.jpg"><img src="data/dahlia/IMG-20210920-WA0015.jpg" ></a>
-            <a href="data/dahlia/IMG-20210920-WA0016.jpg"><img src="data/dahlia/IMG-20210920-WA0016.jpg" ></a>
+            <a href="data/dahlia/IMG-20210920-WA0029.jpg"><img src="data/dahlia/IMG-20210920-WA0029.jpg"></a>
+
+            <a href="data/dahlia/IMG-20210920-WA0031.jpg"><img src="data/dahlia/IMG-20210920-WA0031.jpg"></a>
+
+            <a href="data/dahlia/IMG-20210920-WA0021.jpg"><img src="data/dahlia/IMG-20210920-WA0021.jpg"></a>
+            <a href="data/dahlia/IMG-20210920-WA0008.jpg"><img src="data/dahlia/IMG-20210920-WA0008.jpg"></a>
+            <a href="data/dahlia/IMG-20210920-WA0009.jpg"><img src="data/dahlia/IMG-20210920-WA0009.jpg"></a>
+            <a href="data/dahlia/IMG-20210920-WA0015.jpg"><img src="data/dahlia/IMG-20210920-WA0015.jpg"></a>
+            <a href="data/dahlia/IMG-20210920-WA0016.jpg"><img src="data/dahlia/IMG-20210920-WA0016.jpg"></a>
             <a href="data/dahlia/IMG-20210920-WA0017.jpg"><img src="data/dahlia/IMG-20210920-WA0017.jpg" alt=""></a>
             <a href="data/dahlia/IMG-20210920-WA0034.jpg"><img src="data/dahlia/IMG-20210920-WA0034.jpg" alt=""></a>
             <a href="data/dahlia/IMG-20210920-WA0038.jpg"><img src="data/dahlia/IMG-20210920-WA0038.jpg" alt=""></a>
+
         </div>
+        <div class="switch">
+            <button onclick="fold1()" type="button">Fold</button>
+            <button onclick="spread1()" type="button">spread</button>
+        </div>
+
+
         <h3>Vata Love</h3>
-        <div class="card card3">
+        <div class="card card3" id="s3">
             <a href="data/vata/IMG-20211003-WA0009.jpg"><img src="data/vata/IMG-20211003-WA0009.jpg" alt=""></a>
             <a href="data/vata/IMG-20211003-WA0010.jpg"><img src="data/vata/IMG-20211003-WA0010.jpg" alt=""></a>
             <a href="data/vata/IMG-20211003-WA0011.jpg"><img src="data/vata/IMG-20211003-WA0011.jpg" alt=""></a>
-           
-          
-           
+
+
+
             <a href="data/vata/IMG-20211003-WA0017.jpg"><img src="data/vata/IMG-20211003-WA0017.jpg" alt=""></a>
-            <a href="data/vata/IMG-20211003-WA0018.jpg"><img src="data/vata/IMG-20211003-WA0018.jpg" alt=""></a>
-            <a href="data/vata/IMG-20211003-WA0019.jpg"><img src="data/vata/IMG-20211003-WA0019.jpg" alt=""></a>
+
             <a href="data/vata/IMG20210730174300.jpg"><img src="data/vata/IMG20210730174300.jpg" alt=""></a>
             <a href="data/vata/IMG20210730175043.jpg"><img src="data/vata/IMG20210730175043.jpg" alt=""></a>
             <a href="data/vata/IMG20210730175130.jpg"><img src="data/vata/IMG20210730175130.jpg" alt=""></a>
-            <a href="data/vata/IMG20210730175130.jpg"><img src="data/vata/IMG20210730175130.jpg" alt=""></a>
-             <a href="data/vata/IMG20210730175514.jpg"><img src="data/vata/IMG20210730175514.jpg" alt=""></a>
-             <a href="data/vata/IMG_20210804_183202.jpg"><img src="data/vata/IMG_20210804_183202.jpg" alt=""></a>
+
+            <a href="data/vata/IMG20210730175514.jpg"><img src="data/vata/IMG20210730175514.jpg" alt=""></a>
+            <a href="data/vata/IMG_20210804_183202.jpg"><img src="data/vata/IMG_20210804_183202.jpg" alt=""></a>
             <a href="data/vata/IMG-20211231-WA0002.jpg"><img src="data/vata/IMG-20211231-WA0002.jpg" alt=""></a>
-            <a href="data/vata/IMG-20211231-WA0004.jpg"><img src="data/vata/IMG-20211231-WA0004.jpg" alt=""></a>
+
             <a href="data/vata/IMG-20211231-WA0005.jpg"><img src="data/vata/IMG-20211231-WA0005.jpg" alt=""></a>
             <a href="data/vata/IMG-20211231-WA0006.jpg"><img src="data/vata/IMG-20211231-WA0006.jpg" alt=""></a>
         </div>
-        <h3>RailStation</h3>
-        <div class="card card4">
-            <a href="data/railstation/IMG20210926185940.jpg"><img src="data/railstation/IMG20210926185940.jpg" alt=""></a>
-            <a href="data/railstation/IMG20210926185942.jpg"><img src="data/railstation/IMG20210926185942.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192547.jpg"><img src="data/railstation/IMG20211125192547.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192549.jpg"><img src="data/railstation/IMG20211125192549.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192550.jpg"><img src="data/railstation/IMG20211125192550.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192659.jpg"><img src="data/railstation/IMG20211125192659.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192709.jpg"><img src="data/railstation/IMG20211125192709.jpg" alt=""></a>
-            <a href="data/railstation/IMG20211125192710.jpg"><img src="data/railstation/IMG20211125192710.jpg" alt=""></a>
-            <a href="data/railstation/IMG_20210925_180506.jpg"><img src="data/railstation/IMG_20210925_180506.jpg" alt=""></a>
-            <a href="data/railstation/IMG_20210925_180509.jpg"><img src="data/railstation/IMG_20210925_180509.jpg" alt=""></a>
-            <a href="data/railstation/IMG_20210925_180720.jpg"><img src="data/railstation/IMG_20210925_180720.jpg" alt=""></a>
-            <a href="data/railstation/IMG_20210925_180724.jpg"><img src="data/railstation/IMG_20210925_180724.jpg" alt=""></a>
-            <a href="data/railstation/IMG_20210925_180826.jpg"><img src="data/railstation/IMG_20210925_180826.jpg" alt=""></a>
-            <!-- <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a> -->
+        <div class="switch">
+            <button onclick="fold2()" type="button">Fold</button>
+            <button onclick="spread2()" type="button">spread</button>
         </div>
 
 
-        <h3>Lol Pics</h3>
-        <div class="card card5">
-            <a href="data/lol/IMG-20211228-WA0008.jpg"><img src="data/lol/IMG-20211228-WA0008.jpg" height="327" alt=""></a>
 
-            <a href="data/lol/IMG-20211228-WA0007.jpg"><img src="data/lol/IMG-20211228-WA0007.jpg"  height="327" alt=""></a>
-            <a href="data/lol/IMG-20211228-WA0004.jpg"><img src="data/lol/IMG-20211228-WA0004.jpg" height="327" alt=""></a>
+
+
+        <h3>RailStation</h3>
+        <div class="card card4" id="s4">
+            <a href="data/railstation/IMG20210926185940.jpg"><img src="data/railstation/IMG20210926185940.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG20210926185942.jpg"><img src="data/railstation/IMG20210926185942.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG20211125192547.jpg"><img src="data/railstation/IMG20211125192547.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG20211125192549.jpg"><img src="data/railstation/IMG20211125192549.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG_20210925_180506.jpg"><img src="data/railstation/IMG_20210925_180506.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG_20210925_180720.jpg"><img src="data/railstation/IMG_20210925_180720.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG_20210925_180724.jpg"><img src="data/railstation/IMG_20210925_180724.jpg"
+                    alt=""></a>
+            <a href="data/railstation/IMG_20210925_180826.jpg"><img src="data/railstation/IMG_20210925_180826.jpg"
+                    alt=""></a>
+
+        </div>
+        <div class="switch">
+            <button onclick="fold3()" type="button">Fold</button>
+            <button onclick="spread3()" type="button">spread</button>
+        </div>
+
+        <h3>Lol Pics</h3>
+        <div class="card card5" id="s5">
+            <a href="data/lol/IMG-20211228-WA0008.jpg"><img src="data/lol/IMG-20211228-WA0008.jpg" height="327"
+                    alt=""></a>
+
+            <a href="data/lol/IMG-20211228-WA0007.jpg"><img src="data/lol/IMG-20211228-WA0007.jpg" height="327"
+                    alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0004.jpg"><img src="data/lol/IMG-20211228-WA0004.jpg" height="327"
+                    alt=""></a>
             <!-- <a href="/data/lol/IMG-20210814-WA0005.jpg"><img src="/data/lol/IMG-20210814-WA0005.jpg" alt=""></a> -->
-            <a href="data/lol/IMG-20211228-WA0006.jpg"><img src="data/lol/IMG-20211228-WA0006.jpg" height="327" alt=""></a>
-            <a href="data/lol/IMG-20211228-WA0005.jpg"><img src="data/lol/IMG-20211228-WA0005.jpg" height="327" alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0006.jpg"><img src="data/lol/IMG-20211228-WA0006.jpg" height="327"
+                    alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0005.jpg"><img src="data/lol/IMG-20211228-WA0005.jpg" height="327"
+                    alt=""></a>
             <a href="data/lol/IMG-20211228-WA0010.jpg"><img src="data/lol/IMG-20211228-WA0010.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0013.jpg"><img src="data/lol/IMG-20211228-WA0013.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0009.jpg"><img src="data/lol/IMG-20211228-WA0009.jpg" alt=""></a>
 
-            <a href="data/lol/IMG-20211228-WA0014.jpg"><img src="data/lol/IMG-20211228-WA0014.jpg" height="327" alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0014.jpg"><img src="data/lol/IMG-20211228-WA0014.jpg" height="327"
+                    alt=""></a>
 
-            <a href="data/lol/IMG-20211228-WA0015.jpg"><img src="data/lol/IMG-20211228-WA0015.jpg" height="327" alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0015.jpg"><img src="data/lol/IMG-20211228-WA0015.jpg" height="327"
+                    alt=""></a>
             <a href="data/lol/IMG-20211228-WA0017.jpg"><img src="data/lol/IMG-20211228-WA0017.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0018.jpg"><img src="data/lol/IMG-20211228-WA0018.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0019.jpg"><img src="data/lol/IMG-20211228-WA0019.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0021.jpg"><img src="data/lol/IMG-20211228-WA0021.jpg" alt=""></a>
             <a href="data/lol/IMG-20211228-WA0022.jpg"><img src="data/lol/IMG-20211228-WA0022.jpg" alt=""></a>
 
-            <a href="data/lol/IMG-20211228-WA0009.jpg"><img src="data/lol/IMG-20211228-WA0009.jpg "alt=""></a>
-            <a href="data/lol/received_470361344783253.jpeg"><img src="data/lol/received_470361344783253.jpeg" height="327" alt=""></a>
-            <a href="data/lol/received_5769977166351076.jpeg"><img src="data/lol/received_5769977166351076.jpeg" height="327" alt=""></a>
-            <a href="data/lol/received_413858316720527.jpeg"><img src="data/lol/received_413858316720527.jpeg" height="327" alt=""></a>
+            <a href="data/lol/IMG-20211228-WA0009.jpg"><img src="data/lol/IMG-20211228-WA0009.jpg " alt=""></a>
+            <a href="data/lol/received_470361344783253.jpeg"><img src="data/lol/received_470361344783253.jpeg"
+                    height="327" alt=""></a>
+            <a href="data/lol/received_5769977166351076.jpeg"><img src="data/lol/received_5769977166351076.jpeg"
+                    height="327" alt=""></a>
+            <a href="data/lol/received_413858316720527.jpeg"><img src="data/lol/received_413858316720527.jpeg"
+                    height="327" alt=""></a>
         </div>
-        <h3>Dinajpur Explore</h3>
-        <div class="card card6">
-            <a href="data/kantojir/IMG_20200201_110818.jpg"><img src="data/kantojir/IMG_20200201_110818.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_113645.jpg"><img src="data/kantojir/IMG_20200201_113645.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_113649.jpg"><img src="data/kantojir/IMG_20200201_113649.jpg" alt=""></a>
+        <div class="switch">
+            <button onclick="fold4()" type="button">Fold</button>
+            <button onclick="spread4()" type="button">spread</button>
+        </div>
 
-           <a href="data/kantojir/IMG_20200201_120133.jpg"><img src="data/kantojir/IMG_20200201_120133.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_120808.jpg"><img src="data/kantojir/IMG_20200201_120808.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_123236.jpg"><img src="data/kantojir/IMG_20200201_123236.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_122554.jpg"><img src="data/kantojir/IMG_20200201_122554.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_122603.jpg"><img src="data/kantojir/IMG_20200201_122603.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_132832.jpg"><img src="data/kantojir/IMG_20200201_132832.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_132835.jpg"><img src="data/kantojir/IMG_20200201_132835.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_135640.jpg"><img src="data/kantojir/IMG_20200201_135640.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_162812.jpg"><img src="data/kantojir/IMG_20200201_162812.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_115828.jpg"><img src="data/kantojir/IMG_20200201_115828.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_115837.jpg"><img src="data/kantojir/IMG_20200201_115837.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_115838.jpg"><img src="data/kantojir/IMG_20200201_115838.jpg" alt=""></a>
-           <a href="data/kantojir/IMG_20200201_115845.jpg"><img src="data/kantojir/IMG_20200201_115845.jpg" alt=""></a>
+
+
+        <h3>Dinajpur Explore</h3>
+        <div class="card card6" id="s6">
+            <a href="data/kantojir/IMG_20200201_110818.jpg"><img src="data/kantojir/IMG_20200201_110818.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_113645.jpg"><img src="data/kantojir/IMG_20200201_113645.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_113649.jpg"><img src="data/kantojir/IMG_20200201_113649.jpg" alt=""></a>
+
+            <a href="data/kantojir/IMG_20200201_120133.jpg"><img src="data/kantojir/IMG_20200201_120133.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_120808.jpg"><img src="data/kantojir/IMG_20200201_120808.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_123236.jpg"><img src="data/kantojir/IMG_20200201_123236.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_122554.jpg"><img src="data/kantojir/IMG_20200201_122554.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_122603.jpg"><img src="data/kantojir/IMG_20200201_122603.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_132832.jpg"><img src="data/kantojir/IMG_20200201_132832.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_132835.jpg"><img src="data/kantojir/IMG_20200201_132835.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_135640.jpg"><img src="data/kantojir/IMG_20200201_135640.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_162812.jpg"><img src="data/kantojir/IMG_20200201_162812.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_115828.jpg"><img src="data/kantojir/IMG_20200201_115828.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_115837.jpg"><img src="data/kantojir/IMG_20200201_115837.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_115838.jpg"><img src="data/kantojir/IMG_20200201_115838.jpg" alt=""></a>
+            <a href="data/kantojir/IMG_20200201_115845.jpg"><img src="data/kantojir/IMG_20200201_115845.jpg" alt=""></a>
         </div>
+        <div class="switch">
+            <button onclick="fold5()" type="button">Fold</button>
+            <button onclick="spread5()" type="button">spread</button>
+        </div>
+
+
+
         <h3>School</h3>
-        <div class="card card7">
-             <a href="data/schooldays/IMG-20211027-WA0021.jpg"><img src="data/schooldays/IMG-20211027-WA0021.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0022.jpg"><img src="data/schooldays/IMG-20211027-WA0022.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0023.jpg"><img src="data/schooldays/IMG-20211027-WA0023.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0024.jpg"><img src="data/schooldays/IMG-20211027-WA0024.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0025.jpg"><img src="data/schooldays/IMG-20211027-WA0025.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0026.jpg"><img src="data/schooldays/IMG-20211027-WA0026.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0027.jpg"><img src="data/schooldays/IMG-20211027-WA0027.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211027-WA0028.jpg"><img src="data/schooldays/IMG-20211027-WA0028.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211103-WA0029.jpg"><img src="data/schooldays/IMG-20211103-WA0029.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211103-WA0030.jpg"><img src="data/schooldays/IMG-20211103-WA0030.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211103-WA0031.jpg"><img src="data/schooldays/IMG-20211103-WA0031.jpg" alt=""></a>
-           <a href="data/schooldays/IMG-20211103-WA0094.jpg"><img src="data/schooldays/IMG-20211103-WA0094.jpg" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
-           <a href=""><img src="" alt=""></a>
+        <div class="card card7" id="s7">
+            <a href="data/schooldays/IMG-20211027-WA0021.jpg"><img src="data/schooldays/IMG-20211027-WA0021.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0022.jpg"><img src="data/schooldays/IMG-20211027-WA0022.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0023.jpg"><img src="data/schooldays/IMG-20211027-WA0023.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0024.jpg"><img src="data/schooldays/IMG-20211027-WA0024.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0025.jpg"><img src="data/schooldays/IMG-20211027-WA0025.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0026.jpg"><img src="data/schooldays/IMG-20211027-WA0026.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0027.jpg"><img src="data/schooldays/IMG-20211027-WA0027.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211027-WA0028.jpg"><img src="data/schooldays/IMG-20211027-WA0028.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211103-WA0029.jpg"><img src="data/schooldays/IMG-20211103-WA0029.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211103-WA0030.jpg"><img src="data/schooldays/IMG-20211103-WA0030.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211103-WA0031.jpg"><img src="data/schooldays/IMG-20211103-WA0031.jpg"
+                    alt=""></a>
+            <a href="data/schooldays/IMG-20211103-WA0094.jpg"><img src="data/schooldays/IMG-20211103-WA0094.jpg"
+                    alt=""></a>
+
+            <a href=""><img src="" alt=""></a>
         </div>
+        <div class="switch">
+            <button onclick="fold6()" type="button">Fold</button>
+            <button onclick="spread6()" type="button">spread</button>
+        </div>
+
+
+
     </div>
 
 
@@ -488,21 +613,125 @@ button{
 
 
     <script>
-        function show(){
-           let x=document.getElementById("nav");
-           x.style.left="0rem";
-           let y=document.getElementById("bt1");
-           y.style.position="absolute";
-           
+        function show() {
+            let x = document.getElementById("nav");
+            x.style.left = "0rem";
+            let y = document.getElementById("bt1");
+            y.style.position = "absolute";
+
         }
-        function hide()
-       {
-           let y=document.getElementById("nav");
-           y.style.left="-20rem";
-           let z=document.getElementById("bt1");
-           z.style.position="sticky";
-           z.style.display="block"
-       }
+        function hide() {
+            let y = document.getElementById("nav");
+            y.style.left = "-20rem";
+            let z = document.getElementById("bt1");
+            z.style.position = "sticky";
+            z.style.display = "block"
+        }
+
+        //    for s1
+
+        function fold() {
+
+            let a = document.getElementById("s1");
+            a.style.display = "none";
+
+        }
+        function spread() {
+
+            let a = document.getElementById("s1");
+            a.style.display = "flex";
+
+        }
+        //for s2
+
+        function fold1() {
+
+let a = document.getElementById("s2");
+a.style.display = "none";
+
+}
+function spread1() {
+
+let a = document.getElementById("s2");
+a.style.display = "flex";
+
+}
+
+//for s3
+
+
+function fold2() {
+
+let a = document.getElementById("s3");
+a.style.display = "none";
+
+}
+function spread2() {
+
+let a = document.getElementById("s3");
+a.style.display = "flex";
+
+}
+
+//for s4
+
+function fold3() {
+
+let a = document.getElementById("s4");
+a.style.display = "none";
+
+}
+function spread3() {
+
+let a = document.getElementById("s4");
+a.style.display = "flex";
+}
+
+//for s5
+
+function fold4() {
+
+let a = document.getElementById("s5");
+a.style.display = "none";
+
+}
+function spread4() {
+
+let a = document.getElementById("s5");
+a.style.display = "flex";
+
+}
+
+//for s6
+
+
+function fold5() {
+
+let a = document.getElementById("s6");
+a.style.display = "none";
+
+}
+function spread5() {
+
+let a = document.getElementById("s6");
+a.style.display = "flex";
+
+}
+
+//for s7
+
+function fold6() {
+
+let a = document.getElementById("s7");
+a.style.display = "none";
+
+}
+function spread6() {
+
+let a = document.getElementById("s7");
+a.style.display = "flex";
+
+}
     </script>
 
 
@@ -511,4 +740,5 @@ button{
 
 
 </body>
+
 </html>
