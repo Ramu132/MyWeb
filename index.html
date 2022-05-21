@@ -324,9 +324,10 @@ transition: .6s;
             height: 99vh;
             transition: .6s;
             left: -20rem;
+            transition: .6s;
         }
        .btn1{
-           position: absolute;
+           /* position: absolute; */
            left: 5px;
            top: 7px;
            /* top: 1px; */
@@ -334,6 +335,14 @@ transition: .6s;
            
          
            /* z-index: 2; */
+       }
+       .button1{
+           background-color: #81b29a;
+           position: sticky;
+           width: 100vw;
+           height: 50px;
+           top: 0.1px;
+            transition: .6s;
        }
        .btn2{
            background-color: transparent;
@@ -376,6 +385,7 @@ transition: .6s;
         .about-me p{
 
         }
+    
     }
 
 
@@ -390,7 +400,10 @@ button{
     </style>
 </head>
 <body>
-    <button type="button" onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
+    <div class="button1" id="bt1">
+        <button type="button"  onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
+    </div>
+    
     <nav >
         <div class="navbar" id="nav">
             <div class="top">
@@ -446,11 +459,15 @@ button{
          function show(){
             let x=document.getElementById("nav");
             x.style.left="0rem";
+            let y=document.getElementById("bt1");
+            y.style.position="absolute";
          }
          function hide()
         {
             let y=document.getElementById("nav");
             y.style.left="-20rem";
+            let z=document.getElementById("bt1");
+            z.style.position="sticky";
         }
      </script>
 
