@@ -30,18 +30,13 @@ font-size: 1.19rem;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 display: flex;
 justify-content: center;
-/* background-color: rgb(207, 250, 253); */
-/* background-color: #A8DADC !important; */
-/* background-color: #ffb703; */
-/* background-color: #3d405b; */
+
 background-color: #81b29a;
+/* background-color: rgba(0, 0, 0, 0.8); */
 min-width: 100%;
 box-shadow: 3px 3px 13px  #355070;
 transition: .6s;
 
-/* width: 100vw; */
-/* position: absolute; */
-/* background-color: rgb(190, 190, 190); */
 }
 .navbar a{
     text-decoration: none;
@@ -86,6 +81,7 @@ transition: .6s;
     background-image: url(SAVE_20210728_215118.jpg);
     margin-bottom: 5rem;
     transition: .6s;
+  
 }
 .content{
     margin: auto;
@@ -111,22 +107,20 @@ transition: .6s;
     line-height: 1.5rem;
     font-size: 1rem;
     word-spacing: 3.1px;
-    /* background-color: rgb(161, 31, 31); */
-    /* background-color: #355070; */
     background-color: #81b29a;
     color: rgb(255, 255, 255);
-    /* border: 1px solid rgb(185, 42, 78); */
+   
     border: 2px solid #81b29a;
     width: 18rem;
     height: fit-content;
-    /* height: 19.3rem; */
+  
     padding: 1.3rem 3rem 1.3rem 3rem;
     margin-right: 4px;
     margin-top: 30px;
     margin-bottom: 1rem;
     border-radius :3px;
-    box-shadow: 1px 1px 5px grey;
-    transition: .6s;
+    box-shadow: 1px 1px 7px grey;
+    
 }
 
 .c:hover{
@@ -195,7 +189,7 @@ transition: .6s;
     .navbar a{
         margin: .7rem;
         font-size: 1rem;
-        font-weight: 250;
+        font-weight: 450;
         text-align: center;
     }
     .img{
@@ -246,7 +240,7 @@ transition: .6s;
     line-height: 1.5rem;
     word-spacing: 6px;
     padding: 0rem 5rem;
-    font-weight: lighter;
+    font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .intro{
@@ -270,6 +264,7 @@ transition: .6s;
    position: static;
    transition: .6s;
    box-shadow: -2px -2px 10px gray ;
+   
 }
 .black p{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -282,6 +277,8 @@ transition: .6s;
    top: 50%;
    text-transform: lowercase;
    line-height: 2.9vw;
+  
+   
 }
 .pic img{
     width:35.99vw;
@@ -292,13 +289,9 @@ transition: .6s;
    transition: .6s;
    box-shadow: 2px 2px 10px gray ;
    border-bottom-right-radius: 6px;
+   margin-bottom: 6rem;
 }
- .pictures{
-     margin-top: 200px;
- }
- i{
-     padding-right: 10px;
- }
+ 
 
 
 
@@ -322,11 +315,12 @@ transition: .6s;
             justify-content: flex-start;
           align-items: center;
             position: absolute;
-           
+            min-height: 100%;
+           top: 0px;
             height: 99vh;
             transition: .6s;
             left: -20rem;
-            transition: .6s;
+            
         }
        .btn1{
            /* position: absolute; */
@@ -334,7 +328,7 @@ transition: .6s;
            top: 7px;
            /* top: 1px; */
            background-color: transparent;
-           
+          color: white;
          
            /* z-index: 2; */
        }
@@ -344,7 +338,8 @@ transition: .6s;
            width: 100vw;
            height: 50px;
            top: 0.1px;
-            transition: .6s;
+           transition: .6s;
+            box-shadow: 2px 2px 14px #355070;
        }
        .btn2{
            background-color: transparent;
@@ -355,7 +350,7 @@ transition: .6s;
            margin-bottom: 65px; 
             position: relative;
             left: 5px;
-          
+            
        }
        button{
            display: block !important;
@@ -403,7 +398,7 @@ button{
 </head>
 <body>
     <div class="button1" id="bt1">
-        <button type="button"  onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
+        <button type="button"   onclick="show()" class="btn1"><i class="fa-2x fa-solid fa-bars"></i> show</button>
     </div>
     
     <nav >
@@ -411,10 +406,10 @@ button{
             <div class="top">
                 <button type="button" onclick="hide()" class="btn2"><i class="fa-2x fa-solid fa-bars"></i> hide</button>
             </div>
-            <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
-            <a href="https://ramu132.github.io/FormulaHub/"><i class="fa-solid fa-book"></i> Study</a>
-            <a href="pass.html"><i class="fa-solid fa-images"></i> Gallery</a>
-            <a href="#"><i class="fa-solid fa-question"></i> About</a>
+            <a href="index.html"> Home</a>
+            <a href="https://ramu132.github.io/FormulaHub/"> Study</a>
+            <a href="pass.html">Gallery</a>
+            <a href="#">About</a>
             <!-- should add icons for mobile only -->
         </div>
     </nav>
@@ -447,15 +442,12 @@ button{
             <div class="black">
                <p>"slow progress is still progress"</p>
                 <p>"only Dead fishes go with the flows"</p>
-            </div>
+            </div >
             <div class="pic">
                 <img src="SAVE_20210730_195544.jpg" alt="">
             </div>
         </div>
-     <!-- Pictures sections -->
-     <div class="pictures">
-        <!-- Will be ading pictres -->
-     </div>
+     
 
      <script>
          function show(){
@@ -470,6 +462,10 @@ button{
             y.style.left="-20rem";
             let z=document.getElementById("bt1");
             z.style.position="sticky";
+            z.style.display = "block"
+
+
+
         }
      </script>
 
